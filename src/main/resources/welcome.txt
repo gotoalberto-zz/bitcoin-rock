@@ -1,0 +1,22 @@
+         ROCK                     PAPER                       SCISSORS
+          _______                _______                      _______
+      ---'   ____)           ---'   ____)____             ---'   ____)____
+            (_____)                     ______)                     ______)
+            (_____)                    _______)                  __________)
+            (____)                   _______)                   (____)
+      ---.__(___)           ---.__________)                ---.__(___)
+
+         LIZARD                      :            SPOCK               :       
+           ..                      :                                   :       
+          p  q                     :  RRVIttIti+==iiii++iii++=;:,       :      
+      _\| \  / |/_                 : IBMMMMWWWWMMMMMBXXVVYYIi=;:,        :     
+        \//  \\/                   : tBBMMMWWWMMMMMMBXXXVYIti;;;:,,      :     
+         `|  |`                     t YXIXBMMWMMBMBBRXVIi+==;::;::::       ,    
+          |  | ,/_                ;t IVYt+=+iIIVMBYi=:,,,=i+=;:::::,      ;;   
+      _\, |  |//\                 YX=YVIt+=,,:=VWBt;::::=,,:::;;;:;:     ;;;   
+       /\\|  ;/                   VMiXRttItIVRBBWRi:.tXXVVYItiIi==;:   ;;;;    
+         \;  \                    =XIBWMMMBBBMRMBXi;,tXXRRXXXVYYt+;;: ;;;;;    
+           '. \                    =iBWWMMBBMBBWBY;;;,YXRRRRXXVIi;;;:;,;;;=    
+      .-.    \ |                    iXMMMMMWWBMWMY+;=+IXRRXXVYIi;:;;:,,;;=     
+     `   '.__//                     iBRBBMMMMYYXV+:,:;+XRXXVIt+;;:;++::;;;     
+           `"`                      =MRRRBMMBBYtt;::::;+VXVIi=;;;:;=+;;;;=     
