@@ -71,10 +71,10 @@ public class BitcoinClientTest {
     @Test
     public void getBalanceTest() throws Exception {
         String payload = "{\"jsonrpc\": \"1.0\", \"id\":\"rpc\", "
-                + "\"method\": \"getbalance\", " + "\"params\": [\"test\"] }";
+                + "\"method\": \"getbalance\", " + "\"params\": [\"test\",0] }";
         String response = "{\"result\":0.50000000,\"error\":null,\"id\":\"rpc\"}";
         Mockito.when(this.httpClient.post(payload)).thenReturn(response);
-        float balance = this.instance.getBalance("test");
+        float balance = this.instance.getBalance("test", 0);
         Mockito.verify(this.httpClient, Mockito.times(1)).post(payload);
         Assert.assertEquals(0.5f, balance);
     }

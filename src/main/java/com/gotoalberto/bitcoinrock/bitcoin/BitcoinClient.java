@@ -89,12 +89,15 @@ public class BitcoinClient {
      * 
      * @param accountId
      *            name of account on miner, example 'myAccount'
+     * @param confirmations
+     *            required for check transactions as valid.
      * @return float that represents balance with 8 precision positions.
      * @throws Exception
      *             if there are any problem parsing result.
      */
-    public float getBalance(String accountId) throws Exception {
-        String params = String.format("\"%s\"", accountId);
+    public float getBalance(String accountId, int confirmations)
+            throws Exception {
+        String params = String.format("\"%s\",%s", accountId, confirmations);
         String responseStr = this.httpClient.post(buildPayload("getbalance",
                 params));
         return Float.parseFloat(parseResult(responseStr));

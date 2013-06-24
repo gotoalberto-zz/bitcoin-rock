@@ -35,6 +35,8 @@ class ReceiveMoney implements Step {
     private final String user;
     private final String password;
 
+    private final static int CONFIRMATIONS_REQUIRED = 0;
+
     public ReceiveMoney(PrintStream printer, InputStream input,
             String mainBTCAddress, float fee, String endPoint, int port,
             String user, String password) {
@@ -51,11 +53,11 @@ class ReceiveMoney implements Step {
     public Step run() throws Exception {
         BitcoinClient bclient = new BitcoinClient(this.endPoint, this.port,
                 this.user, this.password);
-        String account = randomString(8);
+        String account = randomString(8).concat("-received");
         String address = bclient.createAddress(account);
         this.printer.print(buildPaymentMessage(address, this.fee));
 
-        while (bclient.getBalance(account) < this.fee) {
+        while (bclient.getBalance(account, CONFIRMATIONS_REQUIRED) < this.fee) {
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
